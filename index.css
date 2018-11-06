@@ -1,10 +1,5 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
 
-.stars input
-{
-    display: none;
-}
-
 input.bar:checked ~ main
 {
     padding: 10px;
@@ -32,6 +27,11 @@ input.list:checked ~ main header
 {
     display: inline-block;
     width: 300px;
+}
+
+input.list:checked ~ main .short
+{
+    display: none;
 }
 
 input.list:checked ~ main section
@@ -79,43 +79,20 @@ input.bar:checked ~ main section
     vertical-align: top;
     height: inherit;
     position: relative;
-    text-align: center;
+    text-align: left;
     width: 250px;
     display: inline-block;
+}
+
+input.bar:checked ~ main .long
+{
+    display: none;
 }
 
 input.bar:checked ~ main img
 {
     width: 100%;
     display: block;
-}
-
-.stars
-{
-    display: inline-block;
-    border: 0;
-}
-
-.stars label
-{
-    float: right;
-}
-
-.stars label:before
-{
-    display: inline-block;
-    font-size: 24px;
-    padding: 5px;
-    margin: 0;
-    font-family: FontAwesome;
-    content: '\f005';
-}
-
-.stars .half:before
-{
-    content: '\f089';
-    position: absolute;
-    padding-right: 0;
 }
 
 div input:checked ~ label,
@@ -127,18 +104,23 @@ div label:hover ~ label
 
 footer
 {
+    padding: 10px;
     display: block;
     overflow: hidden;
     -ms-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
+    font-size: 16px;
+    text-align: left;
+    color: gray;
 }
 
-a,
-footer
+a
 {
-    font-family: 'Comfortaa', cursive;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
 }
 
 .bar:checked ~ main section:hover
@@ -180,18 +162,6 @@ input.bar:checked ~ main section
 input.list:checked ~ main section
 {
     display: block;
-}
-
-.old-price
-{
-    font-size: 24px;
-    color: #757575;
-    text-decoration: line-through;
-}
-
-.now-price
-{
-    font-size: 36px;
 }
 
 img
