@@ -5,8 +5,17 @@ input.bar:checked ~ main
     padding: 10px;
 }
 
+p
+{
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
 img:hover
 {
+    margin-left: 10px;
     -webkit-transition-duration: .7s;
     -o-transition-duration: .7s;
     -ms-transition-duration: .7s;
@@ -17,6 +26,45 @@ img:hover
     transform: scale(1.1);
 }
 
+p:hover
+{
+    margin-left: 20px;
+    -webkit-transition-duration: .7s;
+    -o-transition-duration: .7s;
+    -ms-transition-duration: .7s;
+    transition-duration: .7s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+
+.long:hover
+{
+    -webkit-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+.short:hover
+{
+    -webkit-transition-duration: .7s;
+    -o-transition-duration: .7s;
+    -ms-transition-duration: .7s;
+    transition-duration: .7s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+
 label.list::before
 {
     display: inline-block;
@@ -25,7 +73,7 @@ label.list::before
 
 input.list:checked ~ main header
 {
-    display: inline-block;
+    display: block;
     width: 300px;
 }
 
@@ -36,8 +84,8 @@ input.list:checked ~ main .short
 
 input.list:checked ~ main section
 {
-    margin-top: 40px;
-    width: 100%;
+    margin-top: 20px;
+    width: 50%;
     display: block;
 }
 
@@ -45,8 +93,8 @@ input.list:checked ~ main article,
 footer
 {
     height: inherit;
-    text-align: center;
-    display: inline-block;
+    text-align: left;
+    display: block;
     padding: 0;
 }
 
@@ -54,20 +102,13 @@ input.list:checked ~ main footer
 {
     word-wrap: break-word;
     padding-top: 10px;
-    display: inline-block;
+    display: block;
 }
 
 input.list:checked ~ main img
 {
     max-width: 300px;
-    display: inline-block;
-}
-
-label.bar::before
-{
-    display: inline-block;
-    padding: 10px;
-    content: url(gallery.png);
+    display: block;
 }
 
 input.bar:checked ~ main section
@@ -104,7 +145,7 @@ div label:hover ~ label
 
 footer
 {
-    padding: 10px;
+    padding: 0 20px 10px;
     display: block;
     overflow: hidden;
     -ms-text-overflow: ellipsis;
@@ -121,6 +162,7 @@ a
     font-size: 24px;
     color: black;
     text-decoration: none;
+
 }
 
 .bar:checked ~ main section:hover
@@ -141,9 +183,11 @@ input.list:checked ~ main section:hover
     -webkit-transition-duration: .5s;
     -o-transition-duration: .5s;
     transition-duration: .5s;
-    -webkit-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
 }
 
 section
