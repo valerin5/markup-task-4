@@ -1,8 +1,17 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
-
-input.bar:checked ~ main
+.bar:checked ~ main
 {
     padding: 10px;
+}
+
+ul
+{
+    display: block;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
 }
 
 p
@@ -65,31 +74,31 @@ p:hover
     -moz-transform: scale(1.1);
 }
 
-label.list::before
+.list::before
 {
     display: inline-block;
     padding: 10px;
 }
 
-input.list:checked ~ main header
+.list:checked ~ main header
 {
     display: block;
     width: 300px;
 }
 
-input.list:checked ~ main .short
+.list:checked ~ main .short
 {
     display: none;
 }
 
-input.list:checked ~ main section
+.list:checked ~ main article
 {
     margin-top: 20px;
     width: 50%;
     display: block;
 }
 
-input.list:checked ~ main article,
+.list:checked ~ main article,
 footer
 {
     height: inherit;
@@ -98,20 +107,20 @@ footer
     padding: 0;
 }
 
-input.list:checked ~ main footer
+.list:checked ~ main footer
 {
     word-wrap: break-word;
     padding-top: 10px;
     display: block;
 }
 
-input.list:checked ~ main img
+.list:checked ~ main img
 {
     max-width: 300px;
     display: block;
 }
 
-input.bar:checked ~ main section
+.bar:checked ~ main article
 {
     -o-box-shadow: 2px 2px 5px #888;
     -ms-box-shadow: 2px 2px 5px #888;
@@ -125,12 +134,12 @@ input.bar:checked ~ main section
     display: inline-block;
 }
 
-input.bar:checked ~ main .long
+.bar:checked ~ main .long
 {
     display: none;
 }
 
-input.bar:checked ~ main img
+.bar:checked ~ main img
 {
     width: 100%;
     display: block;
@@ -165,7 +174,7 @@ a
 
 }
 
-.bar:checked ~ main section:hover
+.bar:checked ~ main article:hover
 {
     -webkit-transition-duration: .7s;
     -o-transition-duration: .7s;
@@ -175,7 +184,7 @@ a
     transform: scale(1.05);
 }
 
-input.list:checked ~ main section:hover
+.list:checked ~ main article:hover
 {
     -webkit-box-shadow: 0 0 5px 5px #ddd;
     box-shadow: 0 0 5px 5px #ddd;
@@ -190,20 +199,20 @@ input.list:checked ~ main section:hover
     -o-transform: translateY(-20px);
 }
 
-section
+article
 {
     border: 2px solid #5d4037;
     margin-bottom: 5px;
 }
 
-input.bar:checked ~ main section
+.bar:checked ~ main article
 {
     display: inline-block;
     width: 260px;
     margin: 10px;
 }
 
-input.list:checked ~ main section
+.list:checked ~ main article
 {
     display: block;
 }
